@@ -72,8 +72,7 @@ img {
   clear: both;
 }
 /* RESPONSIVE */
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
   /* GENERAL */
   *{
     margin: 0;
@@ -101,12 +100,83 @@ img {
   }
   /*LEZIONI*/
   #lezioni .row{
+    background-color: rgba(124,81,136,0.15);
+    margin: 0%;
+    /* padding: 50px 10px; */
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right,
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    float: none;
+    display: block;
+    margin-top: 40px;
+  }
+  /*////LEZIONI*/
+  /* STEPS */
+  #steps .row{
+    background-color: rgba(136,124,81,0.15);
+    margin: 0%;
+    padding-bottom: 100px;
+  }
+  /* ///STEPS */
+  /* WHY */
+  #why .row img {
+    max-width: 200px;
+  }
+  #why .row{
+    background-color: rgba(124,81,136,0.15);
+  }
+  /* ////WHY */
+}
+/* ************************************************************************************************************************ */
+/* <420px */
+/* ************************************************************************************************************************ */
+@media screen and (max-width: 420px) {
+  /* GENERAL */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    object-fit: contain;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 80px 10px;
+    margin: auto;
+  }
+  h1{
+    margin-bottom: 50px;
+  }
+  /*LEZIONI*/
+  #lezioni .row{
     background-color: rgba(136,124,81,0.15);
     margin: 0%;
     /* padding: 50px 10px; */
   }
   #lezioni .row>.left,
-  #lezioni .row>.right{
+  #lezioni .row>.right,
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right,
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
     width: 100%;
     float: none;
     display: block;
@@ -119,27 +189,15 @@ img {
     margin: 0%;
     padding-bottom: 100px;
   }
-  #steps .row>.left,
-  #steps .row>.central,
-  #steps .row>.right {
-  float: none;
-  width: 100%;
-  margin-top: 20px;
-  }
   /* ///STEPS */
   /* WHY */
   #why .row img {
     max-width: 200px;
+    max-height: 200px;
   }
   #why .row{
     background-color: rgba(136,124,81,0.15);
   }
-  #why .row>.first,
-  #why .row>.second,
-  #why .row>.third {
-    margin-top: 20px;
-  }
-  /* ////WHY */
 }
 
 /* ////RESPONSIVE */
