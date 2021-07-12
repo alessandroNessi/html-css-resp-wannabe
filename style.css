@@ -97,21 +97,20 @@ img {
     margin: auto;
   }
   h1{
-    width: 100%;
-    text-align: center;
+    margin-bottom: 50px;
   }
   /*LEZIONI*/
   #lezioni .row{
     background-color: rgba(136,124,81,0.15);
     margin: 0%;
-    padding: 50px 10px;
+    /* padding: 50px 10px; */
   }
   #lezioni .row>.left,
   #lezioni .row>.right{
     width: 100%;
     float: none;
     display: block;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   /*////LEZIONI*/
   /* STEPS */
@@ -125,11 +124,21 @@ img {
   #steps .row>.right {
   float: none;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
   }
   /* ///STEPS */
   /* WHY */
-  
+  #why .row img {
+    max-width: 200px;
+  }
+  #why .row{
+    background-color: rgba(136,124,81,0.15);
+  }
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 20px;
+  }
   /* ////WHY */
 }
 
